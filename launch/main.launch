@@ -1,0 +1,20 @@
+<launch>
+<node pkg ="robot_control_main"
+    type="record_odom_action_server.py"
+    name="record_odom_action_server_node"
+    output="screen">
+</node>
+
+<node pkg ="robot_control_main"
+    type="find_wall_service_server.py"
+    name="find_wall_node"
+    output="screen">
+</node>
+
+<node pkg ="robot_control_main"
+    type="main_program.py"
+    name="robot_control_main_node"
+    output="screen">
+</node>
+
+</launch>
